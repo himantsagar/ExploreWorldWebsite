@@ -1,0 +1,130 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f8fb;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1e88e5;
+  padding: 1rem 2rem;
+  color: white;
+}
+
+.nav-links a {
+  margin-left: 1rem;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #bbdefb;
+}
+
+.grid-preview {
+  text-align: center;
+  margin: 3rem;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+}
+.card h3 {
+  margin: 0.5rem 0;
+}
+.card p {
+  padding: 0 1rem 1rem;
+}
+
+.pricing-table {
+  margin: 2rem;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+th, td {
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+th {
+  background-color: #1e88e5;
+  color: white;
+}
+
+.footer {
+  background-color: #0d47a1;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .pricing-table {
+    padding: 0.5rem;
+  }
+  table {
+    font-size: 0.9rem;
+  }
+  th, td {
+    padding: 0.6rem;
+  }
+}
+
+@media (max-width: 500px) {
+  /* Allow horizontal scroll instead of breaking layout */
+  .pricing-table {
+    overflow-x: auto;
+    display: block;
+    white-space: nowrap;
+  }
+
+  table {
+    width: 600px; /* Keep table readable */
+    border-collapse: collapse;
+  }
+
+  th, td {
+    font-size: 0.85rem;
+    padding: 0.5rem;
+  }
+
+  th {
+    background-color: #2196f3;
+  }
+}

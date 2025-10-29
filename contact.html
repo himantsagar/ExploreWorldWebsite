@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ExploreWorld - Contact Us</title>
+  <link rel="stylesheet" href="styles/contact.css" />
+</head>
+
+<body>
+<header class="navbar">
+    <div class="logo">🌍 ExploreWorld</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="destinations.html">Destinations</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+<section class="contact-form">
+    <h2>Contact Us</h2>
+    <form>
+      <label for="name">Full Name</label>
+      <input type="text" id="name" required />
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" required />
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" required />
+
+      <label for="destination">Preferred Destination</label>
+      <select id="destination">
+        <option value="">Select Destination</option>
+        <option>Bali</option>
+        <option>Paris</option>
+        <option>Tokyo</option>
+      </select>
+
+      <label>Preferred Month</label>
+      <div class="radio-group">
+        <label><input type="radio" name="month" /> Jan</label>
+        <label><input type="radio" name="month" /> Feb</label>
+        <label><input type="radio" name="month" /> Mar</label>
+      </div>
+
+      <label><input type="checkbox" /> Subscribe to Newsletter</label>
+
+      <label for="comments">Your Message</label>
+      <textarea id="comments" rows="4"></textarea>
+
+      <button type="submit" class="btn-primary">Submit</button>
+    </form>
+  </section>
+
+  <section class="faq">
+    <h3>Frequently Asked Questions</h3>
+    <details>
+      <summary>Is my booking refundable?</summary>
+      <p>Yes, 100% refund if canceled 7 days before travel.</p>
+    </details>
+    <details>
+      <summary>Do you provide travel insurance?</summary>
+      <p>Yes, travel insurance is available with all packages.</p>
+    </details>
+    <details>
+      <summary>Can I customize my package?</summary>
+      <p>Yes, custom itineraries are available at no extra cost.</p>
+    </details>
+  </section>
+
+  <footer class="footer">
+    <p>ExploreWorld &copy; 2025 | Contact: info@exploreworld.com</p>
+</footer>
+    
+</body>
+</html>
